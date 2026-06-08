@@ -33,7 +33,7 @@ Los documentos y evidencias pueden sufrir modificaciones accidentales o intencio
 
 La publicación accidental de archivos privados, claves o datos personales puede ocasionar problemas de seguridad y privacidad.
 
-📷 **Imagen 5:** Fuga de información digital.
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/fec6f077-7bf2-45da-9f7f-7ce72092bcef" />
 
 ---
 
@@ -43,31 +43,31 @@ La publicación accidental de archivos privados, claves o datos personales puede
 
 Se configuraron permisos de acceso para restringir las acciones que pueden realizar los usuarios sobre determinados archivos y directorios.
 
-📷 **Imagen 6:** Gestión de permisos en Linux.
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/3cc9ce12-8720-4656-8149-11e5341628e6" />
 
 ### Uso de ACL
 
 Las listas de control de acceso (ACL) permitieron asignar permisos específicos a usuarios concretos, proporcionando un control más detallado sobre los recursos.
 
-📷 **Imagen 7:** Esquema de ACL.
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/e42bc734-042d-4179-8be1-40070b32c785" />
 
 ### Verificación mediante SHA-256
 
 Se generaron hashes utilizando el algoritmo SHA-256 para comprobar que los archivos no hayan sido modificados después de su creación.
 
-📷 **Imagen 8:** Generación de hash SHA-256.
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/a22a93fe-39da-4587-80e4-ea3eec45e7e6" />
 
 ### Control de versiones con Git
 
 Git fue utilizado para registrar cada cambio realizado en el proyecto, permitiendo mantener un historial completo de modificaciones.
 
-📷 **Imagen 9:** Flujo de trabajo con Git.
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/0d6791f4-8e44-4578-93aa-76394eb99058" />
 
 ### Repositorio privado en GitHub
 
 El repositorio fue configurado como privado para garantizar que únicamente personas autorizadas tengan acceso a las evidencias almacenadas.
 
-📷 **Imagen 10:** Repositorio privado en GitHub.
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/f2e5ef82-6270-46c6-afdc-ceb19c11d632" />
 
 ### Autenticación mediante SSH
 
