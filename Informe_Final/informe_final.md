@@ -1,58 +1,88 @@
-# INFORME FINAL DE SEGURIDAD
+# INFORME FINAL DE SEGURIDAD INFORMÁTICA
 
-## 1. Introducción
+## Introducción
 
-En la presente actividad se aplicaron diferentes mecanismos de seguridad informática utilizando Linux, Git y GitHub. El objetivo fue proteger la información, controlar los cambios realizados en los archivos y garantizar la integridad de las evidencias almacenadas durante el desarrollo de las prácticas.
+Durante el desarrollo de esta actividad se utilizaron diversas herramientas y mecanismos de seguridad con el propósito de proteger la información almacenada y controlar adecuadamente el acceso a los datos. Asimismo, se aplicaron buenas prácticas relacionadas con la gestión de repositorios, autenticación segura e integridad de archivos.
 
-## 2. Amenazas Identificadas
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/34afebcc-a901-4fd5-872e-5bbf8bade448" />
 
-### 2.1 Acceso no autorizado
 
-Una de las principales amenazas es el acceso de personas no autorizadas a los archivos o repositorios. Esto podría permitir la visualización, copia o modificación de información sensible.
+---
 
-### 2.2 Robo de credenciales
+## Amenazas Detectadas
 
-Las credenciales de acceso, como contraseñas o claves SSH, pueden ser robadas mediante ataques o por una mala gestión de la información. Esto permitiría a terceros acceder a sistemas y repositorios.
+### Acceso indebido a la información
 
-### 2.3 Modificación de archivos
+Existe el riesgo de que personas sin autorización intenten acceder a los archivos o repositorios del proyecto, comprometiendo la confidencialidad de la información.
 
-Los archivos pueden ser alterados de forma accidental o maliciosa, afectando la integridad de la información y generando resultados incorrectos.
+📷 **Imagen 2:** Usuario intentando acceder sin permisos.
 
-### 2.4 Divulgación de información
+### Sustracción de credenciales
 
-La publicación accidental de datos sensibles, claves privadas o información confidencial puede generar riesgos de seguridad y pérdida de privacidad.
+Las contraseñas, claves de acceso o credenciales pueden ser obtenidas por terceros mediante diferentes técnicas, permitiendo el acceso no autorizado a los sistemas.
 
-## 3. Medidas Implementadas
+📷 **Imagen 3:** Representación de robo de contraseñas.
 
-### 3.1 Permisos Linux
+### Alteración de archivos
 
-Se utilizaron permisos de Linux para controlar el acceso a archivos y directorios, permitiendo que únicamente los usuarios autorizados puedan realizar modificaciones.
+Los documentos y evidencias pueden sufrir modificaciones accidentales o intencionales, afectando la confiabilidad de la información almacenada.
 
-### 3.2 ACL (Access Control Lists)
+📷 **Imagen 4:** Archivo siendo modificado.
 
-Las listas de control de acceso permiten asignar permisos específicos a diferentes usuarios, proporcionando un control más detallado sobre los recursos del sistema.
+### Exposición de información sensible
 
-### 3.3 Hash SHA-256
+La publicación accidental de archivos privados, claves o datos personales puede ocasionar problemas de seguridad y privacidad.
 
-Se generaron hashes SHA-256 para verificar la integridad de los archivos. Esto permite detectar cualquier modificación realizada después de la creación del hash original.
+📷 **Imagen 5:** Fuga de información digital.
 
-### 3.4 Git
+---
 
-Se empleó Git como sistema de control de versiones para registrar cambios, mantener un historial de modificaciones y facilitar la recuperación de versiones anteriores.
+## Medidas de Seguridad Aplicadas
 
-### 3.5 GitHub Privado
+### Permisos en Linux
 
-El repositorio fue configurado como privado para restringir el acceso únicamente a usuarios autorizados y evitar la exposición pública de las evidencias.
+Se configuraron permisos de acceso para restringir las acciones que pueden realizar los usuarios sobre determinados archivos y directorios.
 
-### 3.6 SSH
+📷 **Imagen 6:** Gestión de permisos en Linux.
 
-Se generó y configuró una clave SSH para establecer conexiones seguras con GitHub, evitando el uso constante de contraseñas y aumentando la seguridad de la autenticación.
+### Uso de ACL
 
-### 3.7 Autenticación de Dos Factores (2FA)
+Las listas de control de acceso (ACL) permitieron asignar permisos específicos a usuarios concretos, proporcionando un control más detallado sobre los recursos.
 
-Se habilitó la autenticación de dos factores en GitHub para agregar una capa adicional de seguridad y reducir el riesgo de accesos no autorizados.
+📷 **Imagen 7:** Esquema de ACL.
 
-## 4. Conclusiones
+### Verificación mediante SHA-256
 
-La implementación de mecanismos de seguridad como permisos Linux, ACL, Git, GitHub privado, SSH, hashes SHA-256 y autenticación de dos factores permitió fortalecer la protección de la información. Estas herramientas ayudan a garantizar la confidencialidad, integridad y disponibilidad de los datos, reduciendo significativamente los riesgos asociados a la gestión de evidencias digitales.
+Se generaron hashes utilizando el algoritmo SHA-256 para comprobar que los archivos no hayan sido modificados después de su creación.
 
+📷 **Imagen 8:** Generación de hash SHA-256.
+
+### Control de versiones con Git
+
+Git fue utilizado para registrar cada cambio realizado en el proyecto, permitiendo mantener un historial completo de modificaciones.
+
+📷 **Imagen 9:** Flujo de trabajo con Git.
+
+### Repositorio privado en GitHub
+
+El repositorio fue configurado como privado para garantizar que únicamente personas autorizadas tengan acceso a las evidencias almacenadas.
+
+📷 **Imagen 10:** Repositorio privado en GitHub.
+
+### Autenticación mediante SSH
+
+Se implementó una clave SSH para establecer conexiones seguras entre el equipo local y GitHub.
+
+📷 **Imagen 11:** Configuración de clave SSH.
+
+### Autenticación de dos factores (2FA)
+
+Se activó la autenticación de dos factores para reforzar la seguridad de la cuenta y reducir el riesgo de accesos no autorizados.
+
+📷 **Imagen 12:** Verificación en dos pasos.
+
+---
+
+## Conclusiones
+
+La aplicación de herramientas como Git, GitHub, claves SSH, permisos Linux, ACL, hashes SHA-256 y autenticación de dos factores permitió fortalecer significativamente la seguridad de la información. Estas medidas contribuyen a proteger los datos frente a accesos indebidos, modificaciones no autorizadas y posibles pérdidas de información, garantizando una mejor administración de las evidencias digitales.
